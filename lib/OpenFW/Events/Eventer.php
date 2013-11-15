@@ -77,6 +77,13 @@ class Eventer
     protected $events = [];
 
     /**
+     * All registered listeners
+     *
+     * @var array
+     */
+    protected $registeredListeners = [];
+
+    /**
      * Add a new event
      *
      * @param string $event
@@ -89,6 +96,16 @@ class Eventer
         }
 
         $this->events[$event] = $this->createQueue();
+
+        // add listeners added before if matching event against
+        // listener's matcher
+        foreach($this->registeredListeners as $listenerData) {
+            list($matcher, $listener, $priority) = $listenerData;
+
+            if($matcher->match($event)) {
+                $this->events[$event]->insert($listener, $priority);
+            }
+        }
     }
 
     /**
@@ -130,6 +147,9 @@ class Eventer
                 $queue->insert($listener, $priority);
             }
         }
+
+        // store it for using it when new event added
+        $this->registeredListeners[] = [$matcher, $listener, $priority];
     }
 
     /**

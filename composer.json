@@ -1,0 +1,15 @@
+{
+    "name": "alexanderc/open-fw-eventer",
+    "description": "Event manager used in OpenFW framework",
+    "license": "GPL v2",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "AlexanderC",
+            "email": "self@alexanderc.me"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "": "lib/" }
+    }
+}

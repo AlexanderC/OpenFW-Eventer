@@ -1,5 +1,5 @@
 OpenFW::Eventer
-======
+===============
 
 It is a library used by OpenFW framework.
 

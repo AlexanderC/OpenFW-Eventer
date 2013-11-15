@@ -17,6 +17,11 @@ Advantages
  - Well commented
  - ...much more...
 
+Requirements
+============
+ - PHP 5.5 and higher
+ - awesomeness
+
 Installation
 ============
  - Using composer(through packagist): "alexanderc/open-fw-eventer": "dev-master"

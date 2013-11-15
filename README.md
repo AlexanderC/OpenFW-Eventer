@@ -17,6 +17,11 @@ Advantages
  - Well commented
  - ...much more...
 
+Installation
+============
+ - Using composer(through packagist): "alexanderc/open-fw-eventer": "dev-master"
+ - ... or simply load it using your autoloader (PSR-0 compliant)
+
 Example
 =======
 

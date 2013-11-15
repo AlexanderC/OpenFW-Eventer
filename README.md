@@ -3,7 +3,7 @@ OpenFW::Eventer
 
 It is a library used by OpenFW framework.
 
-    Eventer- is an event manager that makes your live easier when using event driven development.
+    Eventer- is an event manager that makes your life easier when using event driven development.
     There are a lot of libraries doing this, but not that beautifully ;)
 
 
